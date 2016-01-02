@@ -1,0 +1,493 @@
+<Solution>
+  <PropertyGroup Name="CocosProject" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Image Name="HelloWorld.png" />
+        <Image Name="mianfeizhuce.png" />
+        <Image Name="youke.png" />
+        <File Name="MainScene.csb" />
+        <Folder Name="baoxiangui">
+          <Image Name="1000wan.png" />
+          <Image Name="100wan.png" />
+          <Image Name="1yi.png" />
+          <Image Name="5000wan.png" />
+          <Image Name="500wan.png" />
+          <Image Name="copy6@2x.png" />
+          <Image Name="cunkuan_an.png" />
+          <Image Name="cunqu_bj.png" />
+          <Image Name="cunqu_bj1.png" />
+          <Image Name="dagou.png" />
+          <Image Name="fou.png" />
+          <Image Name="fuxuankuang.png" />
+          <Image Name="jilu_bj01.png" />
+          <Image Name="pingtiao1.png" />
+          <Image Name="qukuan_an.png" />
+          <Image Name="savingNotpushed@2x.png" />
+          <Image Name="shi.png" />
+          <Image Name="T-6-copy@2x.png" />
+          <Image Name="TransferHistory-2@2x.png" />
+          <Image Name="TransferHistoryNotinUse@2x.png" />
+          <Image Name="TransferNotpushed@2x.png" />
+          <Image Name="xianshikuang.png" />
+          <Image Name="xiougaimima.png" />
+          <Image Name="xitongtishi_bj.png" />
+          <Image Name="zengsong_bj12.png" />
+          <Image Name="zengs_an.png" />
+          <Image Name="denglu_bj.png" />
+        </Folder>
+        <Folder Name="chongzhi">
+          <Image Name="baoshichongzhi_bj.png" />
+          <Image Name="bscz_an.png" />
+          <Image Name="bscz_an1.png" />
+          <Image Name="querenxuanz.png" />
+          <Image Name="sclb_an.png" />
+          <Image Name="sclb_an1.png" />
+          <Image Name="shouchong.png" />
+        </Folder>
+        <Folder Name="dating">
+          <Image Name="bangzbhu1.png" />
+          <Image Name="baoshi_tb.png" />
+          <Image Name="baoxianxiang_an12.png" />
+          <Image Name="bsph12.png" />
+          <Image Name="caifubang_an12.png" />
+          <Image Name="djbz1.png" />
+          <Image Name="djzb2.png" />
+          <Image Name="fanhui12.png" />
+          <Image Name="fenx1.png" />
+          <Image Name="gerenzx_an12.png" />
+          <Image Name="lssb1.png" />
+          <Image Name="meirilingqu_an12.png" />
+          <Image Name="meirilingqu_an121.png" />
+          <Image Name="shangdian12.png" />
+          <Image Name="shang_bj.png" />
+          <Image Name="shezhi12.png" />
+          <Image Name="vip_1.png" />
+          <Image Name="wwxf1.png" />
+          <Image Name="youxigonggao_an12.png" />
+          <Image Name="zjzd1.png" />
+          <Project Name="Register.csd" Type="Layer" />
+          <Project Name="Level4open.csd" Type="Layer" />
+          <Project Name="VIPLobby-Afterdaily.csd" Type="Layer" />
+          <Project Name="IngameupperBar.csd" Type="Layer" />
+          <Project Name="IgamelowerBarafterdaily.csd" Type="Layer" />
+          <Project Name="IgamelowerBar.csd" Type="Layer" />
+          <Project Name="IgameLobby-VIP.csd" Type="Layer" />
+          <Project Name="InLevel1Room-c.csd" Type="Layer" />
+          <Image Name="vip_hui.png" />
+          <Image Name="image326.png" />
+        </Folder>
+        <Folder Name="denglu">
+          <Image Name="bb@2x.png" />
+          <Image Name="dengluyouxi.png" />
+          <Image Name="denglu_xbj.png" />
+          <Image Name="dl_shuruk.png" />
+          <Image Name="mianfeizhuce.png" />
+          <Image Name="youke.png" />
+          <Image Name="denglu_bj.png" />
+        </Folder>
+        <Folder Name="fangjian">
+          <Image Name="chazhaokongwei.png" />
+          <Image Name="fangjian_bj.png" />
+          <Image Name="fm1.png" />
+          <Image Name="fm2.png" />
+          <Image Name="fm3.png" />
+          <Image Name="fm4.png" />
+          <Image Name="kuaisukaishi.png" />
+          <Image Name="renshu_1.png" />
+          <Image Name="renshu_2.png" />
+          <Image Name="renshu_3.png" />
+          <Image Name="renshu_4.png" />
+        </Folder>
+        <Folder Name="gerenzhongx">
+          <Image Name="baocun.png" />
+          <Image Name="BasicInfo@2x.png" />
+          <Image Name="BasicInfoNotInuse@2x.png" />
+          <Image Name="chongzhijilu_bj.png" />
+          <Image Name="gerenzhongx_bj.png" />
+          <Image Name="quxiao.png" />
+          <Image Name="RechargeHistory@2x.png" />
+          <Image Name="shurukuang3.png" />
+          <Image Name="TransferHistoryNotInuse@2x.png" />
+          <Image Name="yanzhengma.png" />
+          <Project Name="Layer.csd" Type="Layer" />
+        </Folder>
+        <Folder Name="paihangbang">
+          <Image Name="caifupaih_bj.png" />
+          <Image Name="Daily@2x.png" />
+          <Image Name="DailyNotInuse@2x.png" />
+          <Image Name="Monthly@2x.png" />
+          <Image Name="MonthlyNotInUse@2x.png" />
+          <Image Name="paihangb.png" />
+          <Image Name="Weekly@2x.png" />
+          <Image Name="WeeklyNotinUse@2x.png" />
+        </Folder>
+        <Folder Name="quanpanjiang">
+          <Image Name="jiqiquanpanj.png" />
+          <Image Name="kp1.png" />
+          <Image Name="kp1_an.png" />
+          <Image Name="kp2.png" />
+          <Image Name="kp2_an.png" />
+          <Image Name="kp3.png" />
+          <Image Name="kp3_an.png" />
+          <Image Name="kp4.png" />
+          <Image Name="kp4_an.png" />
+          <Image Name="kp5.png" />
+          <Image Name="kp5_an.png" />
+          <Image Name="kp6.png" />
+          <Image Name="kp6_an.png" />
+          <Image Name="kp7.png" />
+          <Image Name="kp7_an.png" />
+          <Image Name="kp8.png" />
+          <Image Name="kp8_an.png" />
+          <Project Name="Bank.csd" Type="Layer" />
+        </Folder>
+        <Folder Name="shezhi">
+          <Image Name="Setting@2x.png" />
+        </Folder>
+        <Folder Name="vip_goumai">
+          <Image Name="huifugoumai.png" />
+          <Image Name="lijigoumai.png" />
+          <Image Name="vipgoumai_bj.png" />
+        </Folder>
+        <Folder Name="vip_shuoming">
+          <Image Name="kaiqibaozang.png" />
+          <Image Name="shuomiang_bt.png" />
+        </Folder>
+        <Folder Name="xiaomali">
+          <Image Name="ml1.png" />
+          <Image Name="ml1_an.png" />
+          <Image Name="ml2.png" />
+          <Image Name="ml2_an.png" />
+          <Image Name="ml3.png" />
+          <Image Name="ml3_an.png" />
+          <Image Name="ml4.png" />
+          <Image Name="ml4_an.png" />
+          <Image Name="ml5.png" />
+          <Image Name="ml5_an.png" />
+          <Image Name="ml6.png" />
+          <Image Name="ml6_an.png" />
+          <Image Name="ml7.png" />
+          <Image Name="ml7_an.png" />
+          <Image Name="ml8.png" />
+          <Image Name="ml8_an.png" />
+          <Image Name="ml9.png" />
+          <Image Name="ml9_an.png" />
+          <Image Name="Plane2@2x.png" />
+          <Image Name="xml_bj.png" />
+          <Project Name="Main.csd" Type="Layer" />
+        </Folder>
+        <Folder Name="youxi">
+          <Image Name="bibei.png" />
+          <Image Name="defen.png" />
+          <Image Name="fangjianrenshu12.png" />
+          <Image Name="fangjian_mc.png" />
+          <Image Name="kaishiyouxi_an.png" />
+          <Image Name="kp1.png" />
+          <Image Name="kp10.png" />
+          <Image Name="kp2.png" />
+          <Image Name="kp3.png" />
+          <Image Name="kp4.png" />
+          <Image Name="kp5.png" />
+          <Image Name="kp6.png" />
+          <Image Name="kp7.png" />
+          <Image Name="kp8.png" />
+          <Image Name="kp9.png" />
+          <Image Name="shang_an5.png" />
+          <Image Name="xian1.png" />
+          <Image Name="xian2.png" />
+          <Image Name="xian3.png" />
+          <Image Name="xian4.png" />
+          <Image Name="xian5.png" />
+          <Image Name="xian6.png" />
+          <Image Name="xian7.png" />
+          <Image Name="xian8.png" />
+          <Image Name="xian9.png" />
+          <Image Name="xia_an5.png" />
+          <Image Name="yaxian.png" />
+          <Image Name="youxi_bj1.png" />
+          <Image Name="zidong.png" />
+          <Image Name="zongyafen.png" />
+          <Image Name="zuidayafen.png" />
+        </Folder>
+        <Folder Name="zairu">
+          <Image Name="zairukuang.png" />
+          <Image Name="zairutiao.png" />
+          <Image Name="zairu_bj.png" />
+          <Project Name="GameLobby-VIP.csd" Type="Layer" />
+        </Folder>
+        <Image Name="denglu_bj.png" />
+        <Image Name="dating_bj.png" />
+        <TTF Name="msyhbd.ttf" />
+        <Image Name="image326.png" />
+        <Image Name="image333.png" />
+        <Image Name="bj6.png" />
+        <Project Name="InLevel2Room.csd" Type="Layer" />
+        <Project Name="InLevel3Room-c.csd" Type="Layer" />
+        <Project Name="InLevel4Room.csd" Type="Layer" />
+        <Project Name="GameStart.csd" Type="Layer" />
+        <Image Name="youxi_xia1_03.png" />
+        <Image Name="kapiankuang_03.png" />
+        <Project Name="Ingamelowerbar_c.csd" Type="Layer" />
+        <Project Name="PlyaersinRoom.csd" Type="Layer" />
+        <Project Name="GameRoomContr.csd" Type="Layer" />
+        <Image Name="image200.png" />
+        <Project Name="Profile.csd" Type="Layer" />
+        <Image Name="image69.png" />
+        <Image Name="image65.png" />
+        <Image Name="image613.png" />
+        <Project Name="BuyHistory.csd" Type="Layer" />
+        <Image Name="sch.png" />
+        <Image Name="4.png" />
+        <Image Name="1.png" />
+        <Project Name="MoneyTransfer_c.csd" Type="Layer" />
+        <Project Name="TransferRecord.csd" Type="Layer" />
+        <Image Name="youxigonggao123.png" />
+        <Image Name="qd.png" />
+        <Project Name="Systemnotice.csd" Type="Layer" />
+        <Project Name="LobbyLower_Upperbar_VIP.csd" Type="Layer" />
+        <Project Name="VIPafterdaily_upper_lower.csd" Type="Layer" />
+        <Project Name="FirstTimeOffer.csd" Type="Layer" />
+        <Image Name="1128927.png" />
+        <Project Name="rechargeOffer.csd" Type="Layer" />
+        <Project Name="TransferConfirmation.csd" Type="Layer" />
+        <TTF Name="FZSTK.TTF" />
+        <Project Name="TransferWanning.csd" Type="Layer" />
+        <Project Name="BuyBIPtitle.csd" Type="Layer" />
+        <Image Name="vipLB.png" />
+        <Image Name="cfb.png" />
+        <Image Name="yf.png" />
+        <Image Name="dqrs.png" />
+        <Project Name="DailyRewardnotice.csd" Type="Layer" />
+        <Project Name="LastRoomPop.csd" Type="Layer" />
+        <Project Name="richest.csd" Type="Layer" />
+        <Project Name="CompettionList.csd" Type="Layer" />
+        <Project Name="TriggleGame.csd" Type="Layer" />
+        <Project Name="TigglerGame1.csd" Type="Layer" />
+        <Project Name="TriggleGame2.csd" Type="Layer" />
+        <Project Name="GameWinning.csd" Type="Layer" />
+        <Image Name="yingle.png" />
+        <Image Name="1_20150728155220.apk_000857.png" />
+        <Project Name="TrigglegameWinning.csd" Type="Layer" />
+        <Image Name="gongxini_02.png" />
+        <Image Name="xiaomalishuzi_03.png" />
+        <Image Name="wining.png" />
+        <Image Name="bangzhu1.png" />
+        <Image Name="bangzhu2.png" />
+        <Image Name="bangzhu3.png" />
+        <Image Name="bangzhu4.png" />
+        <Image Name="pingzheng78.png" />
+        <Project Name="Help1.csd" Type="Layer" />
+        <Project Name="Help2.csd" Type="Layer" />
+        <Image Name="kp1.png" />
+        <Project Name="Help3.csd" Type="Layer" />
+        <Project Name="Help4.csd" Type="Layer" />
+        <Project Name="Setting.csd" Type="Layer" />
+        <Image Name="image1626.png" />
+        <Project Name="NoConnect.csd" Type="Layer" />
+        <Project Name="NoMoney.csd" Type="Layer" />
+        <Project Name="GameWinningNormal.csd" Type="Layer" />
+        <Project Name="TrigglerGameLose.csd" Type="Layer" />
+        <Project Name="LoginError.csd" Type="Layer" />
+        <Folder Name="fonts">
+          <TTF Name="FZSTK.TTF" />
+          <TTF Name="msyhbd.ttf" />
+        </Folder>
+        <Project Name="9lines.csd" Type="Layer" />
+        <Folder Name="Default">
+          <Image Name="Button_Disable.png" />
+          <Image Name="Button_Press.png" />
+          <Image Name="CheckBoxNode_Disable.png" />
+          <Image Name="CheckBox_Disable.png" />
+          <Image Name="SliderNode_Disable.png" />
+          <Image Name="SliderNode_Normal.png" />
+          <Image Name="SliderNode_Press.png" />
+          <Image Name="TextAtlas.png" />
+        </Folder>
+        <File Name="Bank.csb" />
+        <File Name="BuyHistory.csb" />
+        <File Name="BuyVIPTitle.csb" />
+        <File Name="CompettionList.csb" />
+        <File Name="DailyRewardnotice.csb" />
+        <File Name="FirstTimeOffer.csb" />
+        <File Name="GameLobby_VIP.csb" />
+        <File Name="GameRoomContr.csb" />
+        <File Name="GameStart.csb" />
+        <File Name="GameStartSence.csb" />
+        <File Name="GameWinning.csb" />
+        <File Name="Help1.csb" />
+        <File Name="Help2.csb" />
+        <File Name="Help3.csb" />
+        <File Name="Help4.csb" />
+        <File Name="IgameLobby_VIP.csb" />
+        <File Name="IgamelowerBar.csb" />
+        <File Name="IgamelowerBarafterdaily.csb" />
+        <File Name="IngameLowerbar.csb" />
+        <File Name="Ingamelowerbar_c.csb" />
+        <File Name="InGameRoom.csb" />
+        <File Name="inGameRoom_c.csb" />
+        <File Name="IngameupperBar.csb" />
+        <File Name="InLevel1Room_c.csb" />
+        <File Name="InLevel2Room.csb" />
+        <File Name="InLevel3Room.csb" />
+        <File Name="InLevel4Room.csb" />
+        <File Name="InRoom1.csb" />
+        <File Name="LastRoomPop.csb" />
+        <File Name="Level4open.csb" />
+        <File Name="Loading.csb" />
+        <File Name="LobbyLower_Upperbar_VIP.csb" />
+        <File Name="MoneyTransfer.csb" />
+        <File Name="MoneyTransfer_c.csb" />
+        <File Name="non_VIPlobbylowerbar.csb" />
+        <File Name="PlyaersinRoom.csb" />
+        <File Name="Profile.csb" />
+        <File Name="rechargeOffer.csb" />
+        <File Name="Register.csb" />
+        <File Name="richest.csb" />
+        <File Name="Setting.csb" />
+        <File Name="Systemnotice.csb" />
+        <File Name="System_notice.csb" />
+        <File Name="TigglerGame1.csb" />
+        <File Name="TransferConfirmation.csb" />
+        <File Name="TransferRecord.csb" />
+        <File Name="TransferWanning.csb" />
+        <File Name="TransferWarning.csb" />
+        <File Name="TriggleGame.csb" />
+        <File Name="TriggleGame2.csb" />
+        <File Name="TrigglegameWinning.csb" />
+        <File Name="VIPafterdaily_upper_lower.csb" />
+        <File Name="VIPLobby_Afterdaily.csb" />
+        <File Name="VIPnotice.csb" />
+        <File Name="VIP_Buy.csb" />
+        <File Name="InLevel3Room_c.csb" />
+        <Project Name="ExitGame.csd" Type="Layer" />
+        <Project Name="CannotenterRoom.csd" Type="Layer" />
+        <Project Name="Login.csd" Type="Layer" />
+        <Project Name="Signup.csd" Type="Layer" />
+        <Project Name="GameLobby.csd" Type="Layer" />
+        <Folder Name="aLOL">
+          <Folder Name="Eff_01">
+            <ExportJsonFile Name="Eff_01.ExportJson" />
+            <PlistImageFolder Image="Eff_010.png" PListFile="Eff_010.plist" Name=".Eff_010_PList.Dir">
+              <PlistImageFile Name="Eff_01_Eff_1_16.png" Key="Eff_01/Eff_1_16.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_15.png" Key="Eff_01/Eff_1_15.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_14.png" Key="Eff_01/Eff_1_14.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_13.png" Key="Eff_01/Eff_1_13.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_12.png" Key="Eff_01/Eff_1_12.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_11.png" Key="Eff_01/Eff_1_11.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_10.png" Key="Eff_01/Eff_1_10.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_09.png" Key="Eff_01/Eff_1_09.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_08.png" Key="Eff_01/Eff_1_08.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_07.png" Key="Eff_01/Eff_1_07.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_06.png" Key="Eff_01/Eff_1_06.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_05.png" Key="Eff_01/Eff_1_05.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_04.png" Key="Eff_01/Eff_1_04.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_03.png" Key="Eff_01/Eff_1_03.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_02.png" Key="Eff_01/Eff_1_02.png" />
+              <PlistImageFile Name="Eff_01_Eff_1_01.png" Key="Eff_01/Eff_1_01.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="Eff_02">
+            <ExportJsonFile Name="Eff_02.ExportJson" />
+            <PlistImageFolder Image="Eff_020.png" PListFile="Eff_020.plist" Name=".Eff_020_PList.Dir">
+              <PlistImageFile Name="Eff_02_Eff_2_13.png" Key="Eff_02/Eff_2_13.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_12.png" Key="Eff_02/Eff_2_12.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_11.png" Key="Eff_02/Eff_2_11.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_10.png" Key="Eff_02/Eff_2_10.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_09.png" Key="Eff_02/Eff_2_09.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_08.png" Key="Eff_02/Eff_2_08.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_07.png" Key="Eff_02/Eff_2_07.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_06.png" Key="Eff_02/Eff_2_06.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_05.png" Key="Eff_02/Eff_2_05.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_04.png" Key="Eff_02/Eff_2_04.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_03.png" Key="Eff_02/Eff_2_03.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_02.png" Key="Eff_02/Eff_2_02.png" />
+              <PlistImageFile Name="Eff_02_Eff_2_01.png" Key="Eff_02/Eff_2_01.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Folder Name="Eff_03">
+            <ExportJsonFile Name="Eff_03.ExportJson" />
+          </Folder>
+          <Folder Name="Eff_04">
+            <ExportJsonFile Name="Eff_04.ExportJson" />
+          </Folder>
+          <Folder Name="Eff_05">
+            <ExportJsonFile Name="Eff_05.ExportJson" />
+          </Folder>
+          <Folder Name="Eff_06">
+            <ExportJsonFile Name="Eff_06.ExportJson" />
+          </Folder>
+          <Folder Name="Eff_07">
+            <ExportJsonFile Name="Eff_07.ExportJson" />
+          </Folder>
+          <Folder Name="Eff_08">
+            <ExportJsonFile Name="Eff_08.ExportJson" />
+          </Folder>
+          <Folder Name="Eff_09">
+            <ExportJsonFile Name="Eff_09.ExportJson" />
+          </Folder>
+          <Folder Name="Eff_10">
+            <ExportJsonFile Name="Eff_10.ExportJson" />
+          </Folder>
+          <Folder Name="Eff_JiaFen">
+            <ExportJsonFile Name="Eff_JiaFen.ExportJson" />
+          </Folder>
+          <Folder Name="Eff_SaoGuang">
+            <ExportJsonFile Name="Eff_SaoGuang.ExportJson" />
+          </Folder>
+          <Folder Name="kpmh_01_GunDong">
+            <ExportJsonFile Name="kpmh_01_GunDong.ExportJson" />
+            <Image Name="kpmh_01_GunDong0.png" />
+          </Folder>
+          <Folder Name="kpmh_05_GunDong">
+            <ExportJsonFile Name="kpmh_05_GunDong.ExportJson" />
+            <Image Name="kpmh_05_GunDong0.png" />
+          </Folder>
+          <Folder Name="kpmh_09_GunDong">
+            <ExportJsonFile Name="kpmh_09_GunDong.ExportJson" />
+            <Image Name="kpmh_09_GunDong0.png" />
+          </Folder>
+          <Folder Name="kpmh_11_GunDong">
+            <ExportJsonFile Name="kpmh_11_GunDong.ExportJson" />
+            <Image Name="kpmh_11_GunDong0.png" />
+          </Folder>
+          <Folder Name="kpmh_13_GunDong">
+            <ExportJsonFile Name="kpmh_13_GunDong.ExportJson" />
+            <Image Name="kpmh_13_GunDong0.png" />
+          </Folder>
+          <Folder Name="kpmh_18_GunDong">
+            <ExportJsonFile Name="kpmh_18_GunDong.ExportJson" />
+            <Image Name="kpmh_18_GunDong0.png" />
+          </Folder>
+          <Folder Name="kpmh_19_GunDong">
+            <ExportJsonFile Name="kpmh_19_GunDong.ExportJson" />
+            <PlistImageFolder Image="kpmh_19_GunDong0.png" PListFile="kpmh_19_GunDong0.plist" Name=".kpmh_19_GunDong0_PList.Dir">
+              <PlistImageFile Name="kpmh_19_GunDong_kpmh_19_02.png" Key="kpmh_19_GunDong/kpmh_19_02.png" />
+              <PlistImageFile Name="kpmh_19_GunDong_kpmh_19_01.png" Key="kpmh_19_GunDong/kpmh_19_01.png" />
+            </PlistImageFolder>
+            <Image Name="kpmh_19_GunDong0.png" />
+          </Folder>
+          <Folder Name="kpmh_20_GunDong">
+            <ExportJsonFile Name="kpmh_20_GunDong.ExportJson" />
+            <Image Name="kpmh_20_GunDong0.png" />
+          </Folder>
+          <Folder Name="kpmh_21_GunDong">
+            <ExportJsonFile Name="kpmh_21_GunDong.ExportJson" />
+            <Image Name="kpmh_21_GunDong0.png" />
+          </Folder>
+          <Folder Name="kpmh_22_GunDong">
+            <ExportJsonFile Name="kpmh_22_GunDong.ExportJson" />
+            <Image Name="kpmh_22_GunDong0.png" />
+          </Folder>
+          <Image Name="Eff_ZhuanDong.png" />
+          <PlistImageFolder Image="kpmh_19_GunDong0.png" PListFile="kpmh_19_GunDong0.plist" Name=".kpmh_19_GunDong0_PList.Dir">
+            <PlistImageFile Name="kpmh_19_GunDong_kpmh_19_02.png" Key="kpmh_19_GunDong/kpmh_19_02.png" />
+            <PlistImageFile Name="kpmh_19_GunDong_kpmh_19_01.png" Key="kpmh_19_GunDong/kpmh_19_01.png" />
+          </PlistImageFolder>
+        </Folder>
+        <PlistInfo Name="ef1.csi" Type="Plist" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
