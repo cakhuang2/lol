@@ -7,7 +7,6 @@ __Platform__ = cc.Application:getInstance():getTargetPlatform()
 --cc.FileUtils:getInstance():addSearchPath("src/")
 --cc.FileUtils:getInstance():addSearchPath("res/")
 -- end
-
 --登陆器IP地址
 GameServerIP = "120.33.34.198"
 GameServerPort = 9108
