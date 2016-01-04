@@ -23,7 +23,7 @@ function Login:ctor()
     end]]
 end
 
---���¸���Э��
+--ÖØÐÂ¸üÐÂÐ­Òé
 function Login:reloadProto()
 	local proto = require("proto")
     local sproto = require("sproto")
@@ -33,7 +33,7 @@ function Login:reloadProto()
     SocketTCP.setHost(host,request)
 end
 
--- ����������״̬
+-- ·þÎñÆ÷Á´½Ó×´Ì¬
 function Login:onServerState(eventSockct)
 	if eventSockct.name == SocketTCP.EVENT_CONNECTED then
 		--self:initGame()
@@ -130,7 +130,7 @@ local function send(tcp,pack)
 	tcp:send(package)
 end
 
---���ע��
+--µã»÷×¢²á
 function Login:onRegisterClick()
     --print(getdata() )
     --server.lua
@@ -145,7 +145,7 @@ function Login:onRegisterClick()
  
     print("Server Start " .. host .. ":" .. port) 
  
-    while 1 do
+    local function __tick()
         local conn = server:accept()
         if conn then
             conn_count = conn_count + 1
@@ -172,67 +172,96 @@ function Login:onRegisterClick()
          
         end
     end
+    scheduler.scheduleGlobal(__tick, 0.1)
+end
+--[[    MessageIdBit    = 0  //消息来源或者目的id
+    MessageUnlenBit = 4  //未压缩前消息体长度，可为0，和len相等表示没有压缩
+    MessageLenBit   = 6  //消息体长度，可为0
+    MessageCmdBit   = 8  //消息命令字
+    MessageSeqBit   = 10 //消息序号
+    MessageRetBit   = 12 //消息返回值，消息返回时使用
+    MessageMaskBit  = 14 //一些标志
+
+    MessageHeaderLen = 16 //消息长度]]
+local function getMessage(pack)
+    local header = ""
+
+    local id = 0
+    header = header..strchar(bit32.extract(id,24,8))
+    header = header..strchar(bit32.extract(id,16,8))
+    header = header..strchar(bit32.extract(id,8,8))
+    header = header..strchar(bit32.extract(id,0,8))
+
+    local sizeUnLen = #pack
+    header = header..strchar(bit32.extract(sizeUnLen,8,8))
+    header = header..strchar(bit32.extract(sizeUnLen,0,8))
+
+    local size = sizeUnLen
+    header = header..strchar(bit32.extract(size,8,8))
+    header = header..strchar(bit32.extract(size,0,8))
+
+    local cmd = 1000
+    header = header..strchar(bit32.extract(cmd,8,8))
+    header = header..strchar(bit32.extract(cmd,0,8))
+
+    local index = 1
+    header = header..strchar(bit32.extract(index,8,8))
+    header = header..strchar(bit32.extract(index,0,8))
+
+    local res = 0
+    header = header..strchar(bit32.extract(res,8,8))
+    header = header..strchar(bit32.extract(res,0,8))
+
+    local mark = 0
+    header = header..strchar(bit32.extract(mark,8,8))
+    header = header..strchar(bit32.extract(mark,0,8))
+    return header
 end
 
-
---�����ʼ��Ϸ
+--µã»÷¿ªÊ¼ÓÎÏ·
 function Login:onStartClick()
-    pack = getdata() 
-    print("send1:"..pack)
-	local size = #pack
---[[	local package = strchar(bit32.extract(0,8,4))
-    package = package..strchar(bit32.extract(1000,12,2))
-    package = package..strchar(bit32.extract(0,14,2))
-    package = package..strchar(bit32.extract(1000,0,2))
-    package = package..strchar(bit32.extract(0,2,2))
-    package = package..strchar(bit32.extract(0,4,2))
-    package = package..strchar(bit32.extract(size,6,2))]]
-    local package = strchar(bit32.extract(0,0,4))
-    package = package..strchar(bit32.extract(size,4,2))
-    package = package..strchar(bit32.extract(0,6,2))
-    package = package..strchar(bit32.extract(1000,8,2))
-    package = package..strchar(bit32.extract(0,10,2))
-    package = package..strchar(bit32.extract(0,12,2))
-    package = package..strchar(bit32.extract(0,14,2))
-    package = package
-    print("send2:"..package)
     --util.changeUI(ui.GameRoomContr)
+    local pack = getdata() 
+    local header = getMessage(pack)
     -- client.lua
     local socket = require("socket")
  
     local host = GameServerIP
-    local port = GameServerPort
+    local port = GameServerPort   
+    --local host = "120.33.34.198"
+    --local port = 9108
     --local host = "127.0.0.1"
     --local port = 12345
     local sock = assert(socket.connect(host, port))
     sock:settimeout(0)
   
-    print("Press enter after input something:")
-    sock:send(package)
-    sock:send(pack.."\n")
+    print("package:"..header)
+    sock:send(header..pack)
 
     local input, recvt, sendt, status
-    while true do
-        --input = getdata() --"msg..........."--io.read()
-       -- if #input > 0 then
-            --assert(sock:send("1000000000000000"))
-            --assert(sock:send(input .. "\n"))
-            --send(sock,input)
-        --end
-     
-        recvt, sendt, status = socket.select({sock}, nil, 1)
-        while #recvt > 0 do
-            local response, receive_status = sock:receive()
-            if receive_status ~= "closed" then
-                if response then
-                    print("rev:"..response)
-                    recvt, sendt, status = socket.select({sock}, nil, 1)
+    local function __tick( ... )
+            
+            --input = getdata() --"msg..........."--io.read()
+           -- if #input > 0 then
+                --assert(sock:send("1000000000000000"))
+                --assert(sock:send(input .. "\n"))
+                --send(sock,input)
+            --end
+         
+           -- recvt, sendt, status = socket.select({sock}, nil, 1)
+           -- while #recvt > 0 do
+                local response, receive_status = sock:receive(16)
+                if receive_status ~= "closed" then
+                    if response then
+                        print("rev:"..response)
+                        recvt, sendt, status = socket.select({sock}, nil, 1)
+                    end
+                else
+             --       break
                 end
-            else
-                break
-            end
-        end
+            --end
     end
+    scheduler.scheduleGlobal(__tick, 0.1)
 	--tcp:send(package)
 end
 
